@@ -129,11 +129,9 @@ end
 
 def num_points_scored(player_name)
   player_points = 0
-  all_players.find do |player|   
+  player_points = all_players.find do |player|   
       player[:name] == player_name
-      player_points = player[:points].to_i
-    end
-  end
+  end[:points]
   player_points
 end
 
