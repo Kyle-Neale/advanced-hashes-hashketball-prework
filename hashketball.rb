@@ -121,6 +121,10 @@ def game_hash
 }
 end
 
+def all_players
+  game_hash[:home][:players]
+end
+
 def num_points_scored(player_name)
   player_points = 0
   game_hash.each do |team, team_data|
