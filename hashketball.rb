@@ -122,7 +122,9 @@ def game_hash
 end
 
 def all_players
-  game_hash[:home][:players]
+  arr1 = game_hash[:home][:players]
+  arr2 = game_hash[:away][:players]
+  total_players = arr1 + arr2
 end
 
 def num_points_scored(player_name)
